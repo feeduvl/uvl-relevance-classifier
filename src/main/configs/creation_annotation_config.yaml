@@ -1,0 +1,5 @@
+experiment: False
+name: "creation_annotation_config"
+filterList:
+  ["PrepareDatasetForPredictionFilter", "PredictionFilter", "ExtendAnnotationFilter"]
+model_name: "Iteration_1_model"

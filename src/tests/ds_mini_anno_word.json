@@ -1,0 +1,246 @@
+{
+    "_id": "66660b0df8c40c1b00323b78",
+    "name": "w1",
+    "uploaded_at": "2024-06-09T20:05:33.362Z",
+    "last_updated": "2024-06-09T20:10:23.176Z",
+    "dataset": "ds_mini",
+    "tores": [
+        "21n",
+        "11n",
+        "22r",
+        "31r",
+        "32n",
+        "41r",
+        "42n",
+        "43r"
+    ],
+    "show_recommendationtore": true,
+    "sentence_tokenization_enabled_for_annotation": false,
+    "docs": [
+        {
+            "name": "Document1",
+            "begin_index": 0,
+            "end_index": 2
+        },
+        {
+            "name": "Document2",
+            "begin_index": 2,
+            "end_index": 6
+        },
+        {
+            "name": "Document3",
+            "begin_index": 6,
+            "end_index": 10
+        },
+        {
+            "name": "Document4",
+            "begin_index": 10,
+            "end_index": 16
+        }
+    ],
+    "tokens": [
+        {
+            "index": 0,
+            "name": "11n",
+            "lemma": "11n",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 1,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 2,
+            "name": "21n",
+            "lemma": "21n",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 3,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 4,
+            "name": "22r",
+            "lemma": "22r",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 5,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 6,
+            "name": "31r",
+            "lemma": "31r",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 7,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 8,
+            "name": "32n",
+            "lemma": "32n",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 9,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 10,
+            "name": "41r",
+            "lemma": "41r",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 11,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 12,
+            "name": "42n",
+            "lemma": "42n",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 13,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        },
+        {
+            "index": 14,
+            "name": "43r",
+            "lemma": "43r",
+            "pos": "",
+            "num_name_codes": 1,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 15,
+            "name": ".",
+            "lemma": ".",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 0
+        }
+    ],
+    "codes": [
+        {
+            "tokens": [
+                0
+            ],
+            "name": "11n",
+            "tore": "11n",
+            "index": 0,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                2
+            ],
+            "name": "21n",
+            "tore": "21n",
+            "index": 1,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                4
+            ],
+            "name": "22r",
+            "tore": "22r",
+            "index": 2,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                6
+            ],
+            "name": "31r",
+            "tore": "31r",
+            "index": 3,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                8
+            ],
+            "name": "32n",
+            "tore": "32n",
+            "index": 4,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                10
+            ],
+            "name": "41r",
+            "tore": "41r",
+            "index": 5,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                12
+            ],
+            "name": "42n",
+            "tore": "42n",
+            "index": 6,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                14
+            ],
+            "name": "43r",
+            "tore": "43r",
+            "index": 7,
+            "relationship_memberships": []
+        }
+    ],
+    "tore_relationships": []
+}

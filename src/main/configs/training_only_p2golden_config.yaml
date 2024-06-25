@@ -1,0 +1,25 @@
+experiment: True
+project:
+  experiment_name: "RelevanceClassifier"
+  run_name: "only_p2golden_dataset"
+  model_name: "only_p2golden_dataset_model"
+datasources:
+  different_train_test_files: False
+  original_datasources:
+    original_excel_file_name: "P2-Golden.xlsx"
+  new_datasources:
+    new_excel2json_file_name: "P2-Golden.json"
+    training_and_testing_file_name: "P2-Golden.json"
+filterList:
+  ["Excel2JSONFilter", "PrepareDatasetForTrainingFilter", "TrainAndEvaluateModelsFilter"]
+tokenizer:
+  name: "bert-base-uncased"
+fold_number: 5
+modelArgs:
+  name: "bert-base-uncased"
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  num_train_epochs: 15
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  logging_steps: 10

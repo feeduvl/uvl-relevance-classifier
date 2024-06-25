@@ -1,0 +1,194 @@
+{
+    "_id" : "660400517cdef6524a7f980a",
+    "name" : "TestAnnotation",
+    "codes" : [],
+    "dataset" : "komoot_reviews_1",
+    "docs" : [
+            {
+                    "name" : "M S January 18, 2024 ",
+                    "begin_index" : 0,
+                    "end_index" : 5
+            },
+            {
+                    "name" : "B R September 16, 2023",
+                    "begin_index" : 5,
+                    "end_index" : 13
+            },
+            {
+                    "name" : "Z H August 14, 2020",
+                    "begin_index" : 13,
+                    "end_index" : 20
+            }
+    ],
+    "last_updated" : "2024-05-22T14:19:51.941Z",
+    "sentence_tokenization_enabled_for_annotation" : true,
+    "show_recommendationtore" : false,
+    "tokens" : [
+            {
+                    "index" : 0,
+                    "name" : "4###",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 1,
+                    "name" : "Very useful app for planning trips.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 2,
+                    "name" : "Unfortunately it has become very slow to load the map, even if the connectivity is very good it takes minutes to display more than a blank screen when switching to the map view.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 3,
+                    "name" : "This makes it a pain to work with on mobile devices.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 4,
+                    "name" : "###",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 5,
+                    "name" : "3###",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 6,
+                    "name" : "Starting a tour, the track disappears from the map.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 7,
+                    "name" : "Only if you have the tour in mind you can complete it.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 8,
+                    "name" : "In that case I do not need the app.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 9,
+                    "name" : "In addition the app stops tracking for whatever reason, I do not know why.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 10,
+                    "name" : "The behaviour was never observed in former versions.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 11,
+                    "name" : "This started in 2023 and stays already quite a while.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 12,
+                    "name" : "###",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 13,
+                    "name" : "2###",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 14,
+                    "name" : "I have been using the app for more than 5 years.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 15,
+                    "name" : "It has never let me down or taken me to a dead end.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 16,
+                    "name" : "It's very reliable and has only gotten better with the growing community of hikers and cyclists (at least in Germany).",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 17,
+                    "name" : "My friends, to whom I'd recommended the app, were very impressed with it and have no problems taking their children with them on tours.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 18,
+                    "name" : "Quick tip: if you're using S8 (or similar) turn off Edge Lighting in display settings while using Wake-up Display during navigation.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            },
+            {
+                    "index" : 19,
+                    "name" : "### Cheers.",
+                    "lemma" : "",
+                    "pos" : "",
+                    "num_name_codes" : 0,
+                    "num_tore_codes" : 0
+            }
+        ],
+    "tore_relationships" : [],
+    "tores" : [
+            "Informative",
+            "Non-Informative"
+        ],
+    "uploaded_at" : "2024-03-27T11:17:37.847Z"
+    }

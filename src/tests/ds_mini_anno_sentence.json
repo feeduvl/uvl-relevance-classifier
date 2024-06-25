@@ -1,0 +1,183 @@
+{
+    "_id": "666609e7f8c40c1b00323b77",
+    "name": "s1",
+    "uploaded_at": "2024-06-09T20:00:39.579Z",
+    "last_updated": "2024-06-09T20:05:12.021Z",
+    "dataset": "ds_mini",
+    "tores": [
+        "Non-Informative",
+        "Informative"
+    ],
+    "show_recommendationtore": false,
+    "sentence_tokenization_enabled_for_annotation": true,
+    "docs": [
+        {
+            "name": "Document1",
+            "begin_index": 0,
+            "end_index": 1
+        },
+        {
+            "name": "Document2",
+            "begin_index": 1,
+            "end_index": 3
+        },
+        {
+            "name": "Document3",
+            "begin_index": 3,
+            "end_index": 5
+        },
+        {
+            "name": "Document4",
+            "begin_index": 5,
+            "end_index": 8
+        }
+    ],
+    "tokens": [
+        {
+            "index": 0,
+            "name": "11n.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 1,
+            "name": "21n.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 2,
+            "name": "22r.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 3,
+            "name": "31r.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 4,
+            "name": "32n.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 5,
+            "name": "41r.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 6,
+            "name": "42n.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        },
+        {
+            "index": 7,
+            "name": "43r.",
+            "lemma": "",
+            "pos": "",
+            "num_name_codes": 0,
+            "num_tore_codes": 1
+        }
+    ],
+    "codes": [
+        {
+            "tokens": [],
+            "name": "",
+            "tore": "",
+            "index": null,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                0
+            ],
+            "name": "",
+            "tore": "Non-Informative",
+            "index": 1,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                1
+            ],
+            "name": "",
+            "tore": "Non-Informative",
+            "index": 2,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                2
+            ],
+            "name": "",
+            "tore": "Informative",
+            "index": 3,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                3
+            ],
+            "name": "",
+            "tore": "Informative",
+            "index": 4,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                4
+            ],
+            "name": "",
+            "tore": "Non-Informative",
+            "index": 5,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                5
+            ],
+            "name": "",
+            "tore": "Informative",
+            "index": 6,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                6
+            ],
+            "name": "",
+            "tore": "Non-Informative",
+            "index": 7,
+            "relationship_memberships": []
+        },
+        {
+            "tokens": [
+                7
+            ],
+            "name": "",
+            "tore": "Informative",
+            "index": 8,
+            "relationship_memberships": []
+        }
+    ],
+    "tore_relationships": []
+}

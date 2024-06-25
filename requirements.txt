@@ -1,0 +1,13 @@
+accelerate
+datasets
+evaluate
+flask_cors
+imbalanced-learn
+jupyter
+mlflow
+nltk
+omegaconf
+openpyxl
+pandas
+torch
+transformers

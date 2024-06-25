@@ -1,0 +1,28 @@
+experiment: True
+project:
+  experiment_name: "RelevanceClassifier"
+  run_name: "only_komoot"
+  model_name: "only_komoot_dataset_model"
+datasources:
+  different_train_test_files: False
+  original_datasources:
+    original_relevance_app_review_json_file_name: "Relevance_AppReview.json"
+    original_relevance_prolific1_33_json_file_name: "Relevance_Prolific1_33.json"
+    original_relevance_prolific34_66_json_file_name: "Relevance_Prolific34_66.json"
+    original_relevance_prolific67_100_json_file_name: "Relevance_Prolific67_100.json"
+  new_datasources:
+    new_combined_original_jsons_file_name: "combined_json_files.json"
+    training_and_testing_file_name: "combined_json_files.json"
+filterList:
+  ["MergeOriginalJSONFilesFilter", "PrepareDatasetForTrainingFilter", "TrainAndEvaluateModelsFilter"]
+tokenizer:
+  name: "bert-base-uncased"
+fold_number: 5
+modelArgs:
+  name: "bert-base-uncased"
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  num_train_epochs: 15
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  logging_steps: 10
