@@ -1,5 +1,5 @@
 from flask import Flask, Response, json, jsonify, request
-from flask_cors import CORS
+# from flask_cors import CORS
 
 from main.behavior.RelevanceClassifier import RelevanceClassifier
 from main.tooling.Logger import logging_setup
@@ -7,8 +7,8 @@ from main.tooling.Logger import logging_setup
 logger = logging_setup(__name__)
 
 app = Flask(__name__)
-#  cors only for local testing
-cors = CORS(app)
+# cors only for local testing
+# cors = CORS(app)
 
 
 class ComponentRelevanceClassifierRestConnectorProvider():
@@ -45,4 +45,4 @@ class ComponentRelevanceClassifierRestConnectorProvider():
         return jsonify(status)
 
     if __name__ == "__main__":
-        app.run(debug=True, host="0.0.0.0", port=9123)
+        app.run(debug=True, host="0.0.0.0", port=9698)

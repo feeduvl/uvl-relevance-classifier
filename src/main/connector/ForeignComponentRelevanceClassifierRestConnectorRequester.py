@@ -9,11 +9,20 @@ from main.tooling.Logger import logging_setup
 logger = logging_setup(__name__)
 
 
-ANNOTATION_GET_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/annotation/name/"
-ANNOTATION_POST_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/store/annotation/"
-ANNOTATION_INITIALIZE_ENDPOINT = 'http://localhost:9709/hitec/orchestration/concepts/annotationinit/'
-ANNOTATION_TOKENIZE_ENDPOINT = "http://localhost:9665/hitec/annotation/tokenize/"
-DATASET_POST_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/store/dataset/"
+BASE_URL = "https://feed-uvl.ifi.uni-heidelberg.de"
+
+ANNOTATION_GET_ENDPOINT = f"{BASE_URL}/hitec/repository/concepts/annotation/name/"
+ANNOTATION_POST_ENDPOINT = f"{BASE_URL}/hitec/repository/concepts/store/annotation/"
+ANNOTATION_INITIALIZE_ENDPOINT = f'{BASE_URL}/hitec/orchestration/concepts/annotationinit/'
+ANNOTATION_TOKENIZE_ENDPOINT = f"{BASE_URL}/hitec/annotation/tokenize/"
+DATASET_POST_ENDPOINT = f"{BASE_URL}/hitec/repository/concepts/store/dataset/"
+
+
+# ANNOTATION_GET_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/annotation/name/"
+# ANNOTATION_POST_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/store/annotation/"
+# ANNOTATION_INITIALIZE_ENDPOINT = 'http://localhost:9709/hitec/orchestration/concepts/annotationinit/'
+# ANNOTATION_TOKENIZE_ENDPOINT = "http://localhost:9665/hitec/annotation/tokenize/"
+# DATASET_POST_ENDPOINT = "http://localhost:9684/hitec/repository/concepts/store/dataset/"
 
 
 class ForeignComponentRelevanceClassifierRestConnectorRequester():

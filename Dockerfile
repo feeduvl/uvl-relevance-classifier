@@ -31,6 +31,6 @@ RUN jupyter nbconvert --to python --execute ComponentRelevanceClassifierServiceS
 
 RUN chmod +x start.sh
 
-EXPOSE 9123
+EXPOSE 9698
 
 CMD ["./start.sh"]
