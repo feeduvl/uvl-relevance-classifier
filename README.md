@@ -17,7 +17,7 @@ The five dataset methods are:
 
 The training is processed via 5-fold cross-validation.
 
-The service provides two methods: 
+The service provides two methods:
 - get the status of the service
 - automatically create an annotation and a new dataset with only informative app review sentences
 
@@ -87,7 +87,7 @@ cd <THE_BASE_DIRECTORY_FOR_MLFLOW>
 mlflow server
 ```
 
-## 3. Setting up the development environment 
+## 3. Setting up the development environment
 
 ```sh
 cd <THE_BASE_DIRECTORY_FOR_THE_uvl-relevance-classifier_SERVICE>

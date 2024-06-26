@@ -3,6 +3,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, List
 
+from omegaconf import DictConfig
+
 from main.structure.Filters.FilterInterface import FilterInterface
 from main.tooling.FileManager import cleanup
 from main.tooling.Logger import logging_setup
@@ -17,7 +19,8 @@ class Pipeline(ABC):
     """
 
     @abstractmethod
-    def __init__(self) -> None:
+    def __init__(self, conf: DictConfig) -> None:
+        self.conf = conf
         self.pipelineFilters: List[FilterInterface] = []
 
     @abstractmethod
@@ -47,7 +50,8 @@ class Pipeline(ABC):
                 # Call the function without any arguments
                 filterResult = filter.__filter__()
 
-        cleanup()
+        if (self.conf.training):
+            cleanup()
 
         logger.info("-------Pipeline finished-------")
 

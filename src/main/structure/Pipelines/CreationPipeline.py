@@ -17,6 +17,7 @@ class CreationPipeline(Pipeline):
     """
 
     def __init__(self, conf: DictConfig, content: Dict[str, str], annotation: Annotation):
+        self.conf = conf
         self.pipelineFilters: List[FilterInterface] = []
         self.__compose__(conf, content, annotation)
 

@@ -1,4 +1,4 @@
-{"method": "bert-classifier/bert",
+{"method": "relevance-classifier",
            "dataset": {"uploaded_at": "0001-01-01T00:00:00Z", "name": "Komoot_AppReview", "size": 0, "documents": [
                {"number": 0,
                 "text": "4\n###A little bit too much self promotion in the app and by email. Other than that its solid, works as expected. Havent planed a trip yet. End of trip process should be faster and easier. Also seems to forget what was the last trip type selected and reverts to gravel biking always. Lacking data sharing to Google Fit.\n###",

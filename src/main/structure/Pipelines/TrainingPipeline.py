@@ -16,6 +16,7 @@ class TrainingPipeline(Pipeline):
     """
 
     def __init__(self, conf: DictConfig):
+        self.conf = conf
         self.pipelineFilters: List[FilterInterface] = []
         self.__compose__(conf)
 

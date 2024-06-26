@@ -132,7 +132,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
                 int: The status of the post request
         """
 
-        logger.info(f"-------Store new generated Dataset with the Name: {dataset}-------")
+        logger.info(f"-------Store new generated Dataset with the Name: {dataset['name']}-------")
 
         try:
             response = requests.post(DATASET_POST_ENDPOINT, json=dataset)

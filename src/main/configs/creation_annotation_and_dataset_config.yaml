@@ -1,4 +1,4 @@
-experiment: False
+training: False
 name: "creation_annotation_and_dataset_config"
 filterList:
   ["PrepareDatasetForPredictionFilter", "PredictionFilter", "ExtendAnnotationFilter", "CreateDatasetFilter"]

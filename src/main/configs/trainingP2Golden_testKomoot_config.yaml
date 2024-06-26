@@ -1,4 +1,4 @@
-experiment: True
+training: True
 project:
   experiment_name: "RelevanceClassifier"
   run_name: "trainingP2Golden_testKomoot"

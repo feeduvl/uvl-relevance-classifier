@@ -1,8 +1,10 @@
 from flask import Flask, Response, json, jsonify, request
-# from flask_cors import CORS
 
 from main.behavior.RelevanceClassifier import RelevanceClassifier
 from main.tooling.Logger import logging_setup
+
+# from flask_cors import CORS
+
 
 logger = logging_setup(__name__)
 

@@ -28,11 +28,11 @@ def getConfigPath(name: str) -> str:
     return CONFIG_FILES_PATH + name
 
 
-def getModelPath(name: str) -> str:
+def getModelPath(name: str) -> Path:
     if not Path(MODEL_PATH).exists():
         Path(MODEL_PATH).mkdir()
 
-    return MODEL_PATH + name
+    return MODEL_PATH + name  # type: ignore
 
 
 def cleanup() -> None:

@@ -189,7 +189,7 @@ def flatten(
             MutableMapping[str, Any]: The dictionary to flatten
             None: The string to prepend to dictionary's keys
             str: The string used to separate flattened keys
-        Returns: 
+        Returns:
             A flattened dictionary
     """
 
