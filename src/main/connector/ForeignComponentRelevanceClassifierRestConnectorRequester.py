@@ -62,7 +62,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
                 int: The status of the post request
         """
 
-        logger.info(f"-------Store extended Annotation: {annotation}-------")
+        logger.info(f"-------Store extended Annotation: {annotation['name']}-------")
 
         try:
             response = requests.post(ANNOTATION_POST_ENDPOINT, json=annotation)

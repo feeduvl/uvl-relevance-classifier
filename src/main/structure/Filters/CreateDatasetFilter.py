@@ -52,7 +52,6 @@ class CreateDatasetFilter(FilterInterface):
                 relevantDocs.append(relevantDoc)
 
         if len(relevantDocs) > 0:
-            logger.info("-------New Dataset has no informative sentences and is therefor not created!-------")
 
             # now = datetime.now()
             # formatted_now = now.strftime("%Y-%m-%d_%H:%M:%S")
@@ -64,8 +63,6 @@ class CreateDatasetFilter(FilterInterface):
                 size=len(annotation['docs']),
                 documents=cast(Documents, relevantDocs)
             )
-
-            logger.info(newGeneratedDataset)
 
             logger.info("-------New Dataset successfully created!-------")
 
