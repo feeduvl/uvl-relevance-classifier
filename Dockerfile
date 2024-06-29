@@ -3,6 +3,7 @@ FROM python:3.11-slim-buster
 RUN apt-get update && apt-get install -y \
     mc \
     curl \
+    procps \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
