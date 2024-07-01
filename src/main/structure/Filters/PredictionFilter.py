@@ -36,16 +36,11 @@ class PredictionFilter(FilterInterface):
 
         tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         finetuned_model = BertForSequenceClassification.from_pretrained(getModelPath(self.conf.model_name))
-        
-        logger.info("finetuned_model done")
 
         model_inputs = tokenizer(sentences, return_tensors="pt", padding=True, truncation=True)
-        
-        logger.info("model_inputs done")
 
-        predictions = torch.argmax(finetuned_model(**model_inputs).logits, dim=1)
-        
-        logger.info("predictions done")
+        with torch.no_grad():
+            predictions = torch.argmax(finetuned_model(**model_inputs).logits, dim=1)
 
         predictedLabels = []
 
