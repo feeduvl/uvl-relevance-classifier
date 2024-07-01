@@ -10,6 +10,7 @@ from main.tooling.Logger import logging_setup
 
 logger = logging_setup(__name__)
 
+BATCH_SIZE = 100
 
 class PredictionFilter(FilterInterface):
     """
@@ -35,12 +36,19 @@ class PredictionFilter(FilterInterface):
         logger.info("-------Start Filter 'PredictionFilter'-------")
 
         tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-        finetuned_model = BertForSequenceClassification.from_pretrained(getModelPath(self.conf.model_name))
+        finetunedModel = BertForSequenceClassification.from_pretrained(getModelPath(self.conf.model_name))
 
-        model_inputs = tokenizer(sentences, return_tensors="pt", padding=True, truncation=True)
+        predictions = []
+        for i in range(0, len(sentences), BATCH_SIZE):
+            batchSentences = sentences[i:i + BATCH_SIZE]
+            batchModelInputs = tokenizer(batchSentences, return_tensors="pt", padding=True, truncation=True)
 
-        with torch.no_grad():
-            predictions = torch.argmax(finetuned_model(**model_inputs).logits, dim=1)
+            with torch.no_grad():
+                batchPredictions = torch.argmax(finetunedModel(**batchModelInputs).logits, dim=1)
+            
+            predictions.extend(batchPredictions.detach())
+            del batchModelInputs, batchPredictions
+
 
         predictedLabels = []
 
