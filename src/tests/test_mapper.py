@@ -18,18 +18,18 @@ wordBasedAnnotation = annotationMapper.mapRelevantSentences2WordBasedAnnotation(
 def test_AnnotationMapperTokens() -> None:
 
     # test tokens in wordBasedAnnotation
-    assert len(wordBasedAnnotation["tokens"]) == 135
+    assert len(wordBasedAnnotation["tokens"]) == 124
 
 
 def test_AnnotationMapperDocs() -> None:
 
     # test docs in wordBasedAnnotation
     assert wordBasedAnnotation["docs"][0]["begin_index"] == 0
-    assert wordBasedAnnotation["docs"][0]["end_index"] == 58
-    assert wordBasedAnnotation["docs"][1]["begin_index"] == 58
-    assert wordBasedAnnotation["docs"][1]["end_index"] == 109
-    assert wordBasedAnnotation["docs"][2]["begin_index"] == 109
-    assert wordBasedAnnotation["docs"][2]["end_index"] == 135
+    assert wordBasedAnnotation["docs"][0]["end_index"] == 47
+    assert wordBasedAnnotation["docs"][1]["begin_index"] == 47
+    assert wordBasedAnnotation["docs"][1]["end_index"] == 98
+    assert wordBasedAnnotation["docs"][2]["begin_index"] == 98
+    assert wordBasedAnnotation["docs"][2]["end_index"] == 124
     assert len(wordBasedAnnotation["docs"]) == 3
     assert wordBasedAnnotation["size"] == 3
 

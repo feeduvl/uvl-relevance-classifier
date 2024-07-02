@@ -1,5 +1,6 @@
 from copy import deepcopy
 from typing import List, Tuple
+from datetime import datetime
 
 import nltk
 from nltk.tokenize import word_tokenize
@@ -8,6 +9,7 @@ from main.structure.DataModels import Annotation
 
 INFORMATIVE = "Informative"
 NON_INFORMATIVE = "Non-Informative"
+NO_CODE = "0"
 
 # Download the NLTK tokenizer data
 nltk.download('punkt')
@@ -49,6 +51,14 @@ class AnnotationMapper():
         self.refreshTokenIndices()
 
         self.wordBasedAnnotation["name"] = self.wordBasedAnnotation["name"] + "_Mapped_With_" + self.sentenceBasedAnnotation["name"]
+        
+        current_time = datetime.now()
+
+        formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+        
+        self.wordBasedAnnotation["uploaded_at"] = formatted_time
+        
+        self.wordBasedAnnotation["last_updated"] = formatted_time
 
         return self.wordBasedAnnotation
 
@@ -65,7 +75,7 @@ class AnnotationMapper():
 
         tokens = self.sentenceBasedAnnotation['tokens']
         codes = {code['tokens'][0]: code['tore'] for code in self.sentenceBasedAnnotation['codes'] if code['index']}
-        return [(token['name'], codes.get(token['index'], 'O')) for token in tokens]
+        return [(token['name'], codes.get(token['index'], '0')) for token in tokens]
 
     def wordTokenizeSentencesAndLabelWords(self, sentencesAndLabels: List[Tuple]) -> List[Tuple]:
         """
@@ -118,7 +128,7 @@ class AnnotationMapper():
         tokensToRemoveIndices = []
 
         for token in self.wordBasedAnnotation["tokens"]:
-            if token["relevance"] == NON_INFORMATIVE:
+            if token["relevance"] == NON_INFORMATIVE or token["relevance"] == NO_CODE:
                 tokensToRemoveIndices.append(token["index"])
 
         return tokensToRemoveIndices
@@ -141,7 +151,7 @@ class AnnotationMapper():
         for docIdx, doc in enumerate(self.wordBasedAnnotation["docs"]):
             unrelevantWordsCounter = 0
             for token in self.wordBasedAnnotation["tokens"][doc["begin_index"]:doc["end_index"]]:
-                if token["relevance"] == NON_INFORMATIVE:
+                if token["relevance"] == NON_INFORMATIVE or token["relevance"] == NO_CODE:
                     unrelevantWordsCounter += 1
             doc2NumberOfUnrelevantWordsDict[docIdx] = unrelevantWordsCounter
 
