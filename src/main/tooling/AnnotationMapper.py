@@ -54,7 +54,7 @@ class AnnotationMapper():
         
         now = datetime.now()
         
-        formattedNow = now.strftime("%Y-%m-%d %H:%M:%S")
+        formattedNow = now.strftime("%Y-%m-%dT%H:%M:%SZ")
         
         self.wordBasedAnnotation["uploaded_at"] = formattedNow
 
