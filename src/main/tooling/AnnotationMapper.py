@@ -50,15 +50,13 @@ class AnnotationMapper():
 
         self.refreshTokenIndices()
 
-        self.wordBasedAnnotation["name"] = self.wordBasedAnnotation["name"] + "_Mapped_With_" + self.sentenceBasedAnnotation["name"]
+        self.wordBasedAnnotation["name"] = self.wordBasedAnnotation["name"] + "_Relevance_Mapping"
         
-        current_time = datetime.now()
-
-        formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+        now = datetime.now()
         
-        self.wordBasedAnnotation["uploaded_at"] = formatted_time
+        formattedNow = now.strftime("%Y-%m-%d %H:%M:%S")
         
-        self.wordBasedAnnotation["last_updated"] = formatted_time
+        self.wordBasedAnnotation["uploaded_at"] = formattedNow
 
         return self.wordBasedAnnotation
 
