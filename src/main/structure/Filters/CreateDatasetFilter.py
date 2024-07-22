@@ -79,6 +79,7 @@ class CreateDatasetFilter(FilterInterface):
                 This method gets the tokens' code.
             Args:
                 Annotation: The finished annotation
+                int: The token index
             Returns:
                 Code: The tokens' code
         """
@@ -96,8 +97,9 @@ class CreateDatasetFilter(FilterInterface):
                 This method gets the tokens' name.
             Args:
                 Annotation: The finished annotation
+                int: The token index
             Returns:
-                Code: The tokens' name
+                str: The tokens' name
         """
 
         for token in annotation['tokens']:
