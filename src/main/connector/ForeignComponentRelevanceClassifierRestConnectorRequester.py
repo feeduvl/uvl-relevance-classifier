@@ -36,7 +36,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
     def getAnnotationRequest(self, annotationName: str) -> Annotation:
         """
             Description:
-                This method sends a get request to the uvl-storage service to get an existing annotation.
+                This method sends a GET request to the uvl-storage-concepts service to get an existing annotation.
             Args:
                 str: The annotation name
             Returns:
@@ -55,11 +55,11 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
     def storeAnnotationRequest(self, annotation: Annotation) -> int:
         """
             Description:
-                This method sends a post request to the uvl-storage service to store an finished annotation.
+                This method sends a POST request to the uvl-storage-concepts service to store an finished annotation.
             Args:
                 Annotation: The finishhed annotation, which has to be stored
             Returns:
-                int: The status of the post request
+                int: The status of the POST request
         """
 
         logger.info(f"-------Store extended Annotation: {annotation['name']}-------")
@@ -74,13 +74,13 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
     def initializeAnnotationRequest(self, datasetName: str, annotationName: str, sentenceTokenizationEnabledForAnnotation: bool) -> int:
         """
             Description:
-                This method sends a post request to the uvl-orchestration service to initialize a new annotation.
+                This method sends a POST request to the uvl-orchestration-concepts service to initialize a new annotation.
             Args:
                 str: The dataset name
                 str: The annotation name
                 bool: What kind of tokenization
             Returns:
-                int: The status of the post request
+                int: The status of the POST request
         """
 
         logger.info(f"-------Initialize annotation {annotationName} of dataset {datasetName}-------")
@@ -100,7 +100,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
     def tokenizeAnnotationRequest(self, dataset: List[Dict], sentenceTokenizationEnabledForAnnotation: bool) -> Annotation:
         """
             Description:
-                This method sends a post request to the uvl-annotation service to tokenize a dataset.
+                This method sends a POST request to the uvl-annotation service to tokenize a dataset.
             Args:
                 List[Dict]: The dataset, which has to be tokenized
                 bool: What kind of tokenization
@@ -125,11 +125,11 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
     def storeDatasetRequest(self, dataset: Dataset) -> int:
         """
             Description:
-                This method sends a post request to the uvl-storage service to store a dataset.
+                This method sends a POST request to the uvl-storage-concepts service to store a dataset.
             Args:
                 Dataset: The dataset, which has to be stored
             Returns:
-                int: The status of the post request
+                int: The status of the POST request
         """
 
         logger.info(f"-------Store new generated Dataset with the Name: {dataset['name']}-------")

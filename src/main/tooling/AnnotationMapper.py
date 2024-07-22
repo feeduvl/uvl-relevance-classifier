@@ -16,6 +16,11 @@ nltk.download('punkt')
 
 
 class AnnotationMapper():
+    """
+        Description: The AnnotationMapper class excludes all irrelevant sentences (and therefor words) from a finished word-based 
+        annotation. This is done with the help of a finished sentence-based annotation, that labels sentences as either relevant 
+        or irrelevant.
+    """
 
     def __init__(self, wordBasedAnnotation: Annotation, sentenceBasedAnnotation: Annotation) -> None:
         self.wordBasedAnnotation = deepcopy(wordBasedAnnotation)  # avoid changing original wordBasedAnnotation
@@ -26,7 +31,7 @@ class AnnotationMapper():
             Description:
                 The behavior function to adjust the wordBasedAnnotation, that it only contains informative sentences.
             Args:
-                Annotation: The original class variable wordBasedAnnotation
+                None: Uses the original class variable wordBasedAnnotation
             Returns:
                 Annotation: The updated class variable wordBasedAnnotation
         """
@@ -66,7 +71,7 @@ class AnnotationMapper():
                 Extract the information from the sentenceBasedAnnotation, which sentence is informative or non-informative
                 and put this into a data structure.
             Args:
-                Annotation: self.sentenceBasedAnnotation
+                None: Uses the original class variable sentenceBasedAnnotation
             Returns:
                 List[Tuple]: List with Tuples, that looks like "[(<Sentence1>, <Relevance>), (<Sentence2>, <Relevance>), ...]"
         """
@@ -103,7 +108,6 @@ class AnnotationMapper():
                 For example a token looks now like:
                 {'index': 6, 'name': 'app', 'lemma': 'app', 'pos': 'n', 'num_name_codes': 1, 'num_tore_codes': 1, 'relevance': 'Informative'}
             Args:
-                Annotation: self.wordBasedAnnotation
                 List[Tuple]: wordsAndLabels (the output from wordTokenizeSentencesAndLabelWords())
             Returns:
                 None: The class variable wordBasedAnnotation is updated
@@ -118,7 +122,7 @@ class AnnotationMapper():
                 Extract token indices, which have the entry "Non-Informative" for the "relevance" parameter in the
                 wordBasedAnnotation
             Args:
-                Annotation: self.wordBasedAnnotation
+                None: Uses the class variable wordBasedAnnotation
             Returns:
                 List[int]: Token indices, that are "Non-Informative"
         """
@@ -137,7 +141,7 @@ class AnnotationMapper():
                 Adjust the docs "begin_index" and "end_index" based of the number of unrelevant words in this doc,
                 delete a doc if it contains only unrelevant words, update the annotation "size" parameter
             Args:
-                Annotation: self.wordBasedAnnotation
+                None: Uses the class variable wordBasedAnnotation
             Returns:
                 None: The class variable wordBasedAnnotation is updated
         """
@@ -180,7 +184,6 @@ class AnnotationMapper():
                 words (the indices in a code["tokens"] list, contains not only indices, that are included in
                 the tokensToRemoveIndices list)
             Args:
-                Annotation: self.wordBasedAnnotation
                 List[int]: tokensToRemoveIndices (the output from extractTokensToRemove())
             Returns:
                 None: The class variable wordBasedAnnotation is updated
@@ -205,7 +208,7 @@ class AnnotationMapper():
             Description:
                 Remove the relevance parameter from all tokens, that was added in extendTokensParameters()
             Args:
-                Annotation: self.wordBasedAnnotation
+                None: Uses the class variable wordBasedAnnotation
             Returns:
                 None: The class variable wordBasedAnnotation is updated
         """
@@ -221,7 +224,7 @@ class AnnotationMapper():
                 to new token index. Second, the token index references in the code["tokens"] lists are adjusted according to
                 the mapping in oldToNewTokenIndices. Finally, the token indices are adjusted according to the mapping oldToNewTokenIndices.
             Args:
-                Annotation: self.wordBasedAnnotation
+                None: Uses the class variable wordBasedAnnotation
             Returns:
                 None: The class variable wordBasedAnnotation is updated
         """

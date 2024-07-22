@@ -22,12 +22,12 @@ class MergeOriginalJSONFilesFilter(FilterInterface):
     def __filter__(self) -> None:
         """
             Description:
-                This method loads the original json files, extracts the important parts, formates them, concatenate these formatted
-                parts and save it into a new json file.
+                This method loads the original json files, extracts the important parts, formates them, concatenates these formatted
+                parts and saves it into a new json file.
             Args:
                 None: Uses the configuration class variable
             Returns:
-                None: Saves the json data as a file
+                None: Saves the json data in a file
         """
 
         logger.info("-------Start Filter 'MergeOriginalJSONFilesFilter'-------")

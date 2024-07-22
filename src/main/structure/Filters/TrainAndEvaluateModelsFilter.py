@@ -27,13 +27,17 @@ class TrainAndEvaluateModelsFilter(FilterInterface):
     def __filter__(self, df: Union[pd.DataFrame, Tuple[pd.DataFrame, pd.DataFrame]]) -> None:
         """
             Description:
-                This method is the main part for training the models. The training is is processed with cross validation.
+                This method is the main part for training the models. The training is processed with cross validation.
                 Before training the model, the data is tokenized with [CLS] and [SEP] token added, padding, truncation and
                 attention masking. For training, the Trainer from transformers library is used.
             Args:
-                None: Uses the configuration class variable
+                Union[pd.DataFrame, Tuple[pd.DataFrame, pd.DataFrame]]: 
+                If different_train_test_files in the class configuration is True, then a tuple of pd.Dataframes is handed into 
+                this method (one dataframe for training and the other for testing)
+                If different_train_test_files in the class configuration is False, then one pd.Dataframe is handed into 
+                this method (one dataframe for training and testing)
             Returns:
-                None: The model is saved and the evaluation results are handed in to the MLflowHandler for upload
+                None: The model and the evaluation results are handed into the MLflowHandler for upload
         """
 
         logger.info("-------Start Filter 'TrainAndEvaluateModelsFilter'-------")

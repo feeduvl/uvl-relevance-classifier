@@ -25,7 +25,7 @@ class RelevanceClassifier():
     def startTrainingPipeline(self, conf: DictConfig) -> None:
         """
             Description:
-                This methods delegates the training.
+                This method delegates the training.
             Args:
                 DictConfig: The configuration, that specifies, which training shall be executed
             Returns:
@@ -37,14 +37,13 @@ class RelevanceClassifier():
         trainingPipeline.__process__()
 
     def startCreationPipeline(self, content: Dict[str, str]) -> str:
-
         """
             Description:
-                This methods delegates the creation.
+                This method delegates the creation.
             Args:
                 Dict[str, str]: The selected configuration from the user (comes from the ri-visualization service)
             Returns:
-                str: A message, that outlines what was created.
+                str: A message, that outlines what was created
         """
 
         try:
@@ -115,13 +114,12 @@ class RelevanceClassifier():
         return annotation
 
     def mapRelevantSentences2WordBasedAnnotation(self, wordBasedAnnotation: str, sentenceBasedAnnotation: str) -> None:
-
         """
             Description:
                 This method uses the foreignComponentRequester and delegates the annotation mapping, which is based
                 on a word-based and sentence-based annotation with the same dataset as a base.
             Args:
-                str: The name on the word-based annotation
+                str: The name of the word-based annotation
                 str: The name of the sentence-based annotation
             Returns:
                 None: A mapped word-based annotation is saved in the database via the foreignComponentRequester

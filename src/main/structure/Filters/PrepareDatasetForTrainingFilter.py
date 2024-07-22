@@ -23,7 +23,7 @@ class PrepareDatasetForTrainingFilter(FilterInterface):
         """
             Description:
                 Depending on the defined different_train_test_files in the training configuration (if training and testing is processed
-                for one dataset or for different datasets), this method converts the prepared json files into pandas dataframe/s.
+                with one dataset or with different datasets), this method converts the prepared json files into pandas dataframe/s.
             Args:
                 None: Uses the configuration class variable
             Returns:

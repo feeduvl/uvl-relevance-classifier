@@ -55,7 +55,7 @@ class ExtendAnnotationFilter(FilterInterface):
 
             Args:
                 List[str]: The sentences
-                List[str]: The labels.
+                List[str]: The labels
             Returns:
                 List[Code]: The codes list
         """

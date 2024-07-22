@@ -9,7 +9,7 @@ logger = logging_setup(__name__)
 
 class PrepareDatasetForPredictionFilter(FilterInterface):
     """
-        Description: This filter extracts annotation parts and adds these to a list of strings,that is used for the model prediction.
+        Description: This filter extracts annotation parts and adds these to a list of strings, that is used for the model prediction.
         Used in the creation pipeline.
     """
 

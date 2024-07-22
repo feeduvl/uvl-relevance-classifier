@@ -33,7 +33,7 @@ class Pipeline(ABC):
                 This method processes the pipeline filters. This is done via a loop, that hands in the return object of the previous filter
                 to the next filter. At the end, the new generated files are deleted.
             Args:
-                None: The class variable is used
+                None: The class variables are used
             Returns:
                 Any: Depends on the pipeline, what is returned
 

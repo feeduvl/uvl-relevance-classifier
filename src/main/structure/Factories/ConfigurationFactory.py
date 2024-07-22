@@ -17,7 +17,7 @@ class ConfigurationFactory(FactoryInterface):
             Description:
                 Based on the configName, this method creates the specific configuration.
             Args:
-                str: The configuration name.
+                str: The configuration name
             Returns:
                 DictConfig: The configuration object from OmegaConf
         """

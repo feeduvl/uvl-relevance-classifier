@@ -20,10 +20,10 @@ class PipelineFactory(FactoryInterface):
                 Based on the pipelineName, this method creates the specific pipeline and sets the specific parameters,
                 which the specific pipeline needs.
             Args:
-                str: The pipeline name.
-                Any: Not specifically defined, how many arguments are handed in, therefor the method gets access via **kwargs.
+                str: The pipeline name
+                Any: Not specifically defined, how many arguments are handed in, therefor the method gets access via **kwargs
             Returns:
-                Pipeline: One pipeline object.
+                Pipeline: One pipeline object
         """
 
         match pipelineName:

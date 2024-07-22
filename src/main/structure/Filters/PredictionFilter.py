@@ -25,11 +25,11 @@ class PredictionFilter(FilterInterface):
         """
             Description:
                 This method tokenizes the sentences and gives them as input to the fine-tuned model, which outputs the predictions
-                regarding the relevance of each sentnece. Used in the creation pipeline.
+                regarding the relevance of each sentence.
             Args:
                 List[str]: A list, that contains the sentences
             Returns:
-                Tuple[List[str], List[str]]: A tuple, that contains a list with the the original sentences and a list with the relevance
+                Tuple[List[str], List[str]]: A tuple, that contains a list with the original sentences and a list with the relevance
                 predictions
         """
 

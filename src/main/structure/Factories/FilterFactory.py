@@ -24,12 +24,12 @@ class FilterFactory(FactoryInterface):
     def __create__(self, filterName: str, *args: Any, **kwargs: Any) -> FilterInterface:
         """
             Description:
-                Based on the creationName, this method creates the specific filter and sets the specific parameters, which the specific filter needs.
+                Based on the filterName, this method creates the specific filter and sets the specific parameters, which the specific filter needs.
             Args:
-                str: The filter name.
-                Any: Not specifically defined, how many arguments are handed in, therefor the method gets access via **kwargs.
+                str: The filter name
+                Any: Not specifically defined, how many arguments are handed in, therefor the method gets access via **kwargs
             Returns:
-                FilterInterface: One filter object.
+                FilterInterface: One filter object
         """
 
         match filterName:

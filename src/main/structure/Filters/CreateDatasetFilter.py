@@ -23,7 +23,7 @@ class CreateDatasetFilter(FilterInterface):
         """
             Description:
                 This method extracts relevant sentences from the annotation and creates a new dataset,
-                which contains only of these sentences.
+                which contains only these sentences.
             Args:
                 Annotation: The finished annotation
             Returns:
