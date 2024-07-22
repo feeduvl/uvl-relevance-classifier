@@ -48,7 +48,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
         try:
             response = requests.get(f"{ANNOTATION_GET_ENDPOINT}{annotationName}")
         except ConnectionError as e:
-            print(f"ConnectionError: Failed to connect to the uvl-storage service: {e}")
+            print(f"ConnectionError: Failed to connect to the uvl-storage-concepts service: {e}")
 
         return cast(Annotation, response.json())
 
@@ -67,7 +67,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
         try:
             response = requests.post(ANNOTATION_POST_ENDPOINT, json=annotation)
         except ConnectionError as e:
-            print(f"ConnectionError: Failed to connect to the uvl-storage service: {e}")
+            print(f"ConnectionError: Failed to connect to the uvl-storage-concepts service: {e}")
 
         return response.status_code
 
@@ -93,7 +93,7 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
                 json=annotation,
             )
         except ConnectionError as e:
-            raise ConnectionError(f"ConnectionError: Failed to connect to the uvl-orchestration service: {e}")
+            raise ConnectionError(f"ConnectionError: Failed to connect to the uvl-orchestration-concepts service: {e}")
 
         return response.status_code
 
@@ -137,6 +137,6 @@ class ForeignComponentRelevanceClassifierRestConnectorRequester():
         try:
             response = requests.post(DATASET_POST_ENDPOINT, json=dataset)
         except ConnectionError as e:
-            print(f"ConnectionError: Failed to connect to the uvl-storage service: {e}")
+            print(f"ConnectionError: Failed to connect to the uvl-storage-concepts service: {e}")
 
         return response.status_code
