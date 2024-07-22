@@ -2,7 +2,7 @@
 
 # Describtion
 This microservice implements the automatic relevance classification of online feedback. For the classifier, the [pre-trained "bert-base-uncased" model](https://huggingface.co/google-bert/bert-base-uncased), which is fine-tuned for the task, is used.
-Five runs are executed, were models are fine-tuned based on different datasets and dataset combinations. The models and the evaluation of these models are stored in MLflow.
+Five runs are executed, were models are fine-tuned based on different datasets and dataset combinations. The models and the evaluation of these models are stored in MLflow (a part of the evaluaation can be found in the "evaluation" package).
 
 Two different datasets are used:
 - The P2-Golden dataset (consists of 1242 app review sentences) from [^fn1]
