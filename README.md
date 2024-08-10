@@ -34,6 +34,8 @@ The service provides two methods:
 
 ```sh
 docker build -t <CONTAINER_NAME> -f "./Dockerfile" --build-arg mlflow_tracking_username=XXXXXX --build-arg mlflow_tracking_password=XXXXXX --build-arg mlflow_tracking_uri=https://mlflow-uvl.ifi.uni-heidelberg.de .
+
+docker run -p 9698:9698 --name <CONTAINER_NAME>
 ```
 → replace XXXXXX with the appropriate credentials
 
